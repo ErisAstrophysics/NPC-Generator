@@ -10,8 +10,12 @@ user = int(input('How Many NPCs Do You Want? '))
 first_names = ['Star', 'Sky', 'Aris', 'Mars', 'Moon', 'Orion', 'Atlas', 'Luna', 'Nova', 'Andromeda']
 last_names = ['Smith', 'Johnson', 'Brown', 'Miller', 'Davis', 'Jones', 'Williams', 'Anderson', 'Jackson', 'Green']
 eye_color = ['Brown', 'Brown', 'Hazel', 'Hazel', 'Blue', 'Blue', 'Green', 'Green', 'Gold', 'Gold']
+
+# The age will be decided by a random number generator, it will pick a number between 12 and 65 to be the age of the NPC
 age = random.randint(12, 65)
 hair_color = ['Red', 'Green', 'Blue', 'Purple', 'Pink', 'Brown', 'Black']
+
+# As well with the height, it will be chosen by a random number generator, it will be in centimeters to be more universal for different users
 height = random.randint(152, 198)
 
 # This sets the amount of npcs generated to 0
@@ -24,5 +28,5 @@ while npcs_generated <= user:
     height = random.randint(152, 198)
     
     npcs_generated += 1
-# This adds one to the counter, the loop will continue making npcs until the counter is equal to how many npcs the user wants
+# This adds one to the counter, the counter is counting the amount of npcs that have been generated, the loop will continue making npcs until the counter is equal to how many npcs the user wants
     
